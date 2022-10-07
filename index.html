@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CubeTimer</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<script src="/js/global.js"></script>
+
+<body>
+    <main id="main-app">
+        <div id="side-menu" class="can_hiden">
+            <h4 id="time-header">your times:</h4>
+            <table id="first-table">
+                <tr>
+                    <td>
+                        current time
+
+                    </td>
+                    <td id="CurrentSolve-area">
+                        -
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        last time
+
+                    </td>
+                    <td id="LastSolve-area">
+                        -
+                    </td>
+                </tr>
+            </table>
+            <table id="second-table">
+                <tr>
+                    <td>solves</td>
+                    <td id="SolveCount-area">
+                        0/0
+                    </td>
+                </tr>
+                <tr>
+                    <td>mean:</td>
+                    <td id="MeanArea">
+                        -
+                    </td>
+                </tr>
+            </table>
+
+            <div id="MyScroll">
+                <table id="third-table">
+                    <tbody id="timestablebody">
+                        <tr style="position: sticky;top:0;">
+                            <th>&#x2647;</th>
+                            <th>time</th>
+                            <th>ao5</th>
+                            <th>ao12</th>
+                        </tr>
+                        <tr data="0">
+                            <td>
+                                -
+                            </td>
+                            <td>
+                                -
+                            </td>
+                            <td class="ao5-table">
+                                -
+                            </td>
+                            <td class="ao12-table">
+                                -
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div id="main-wrapper">
+            <div class="can_hiden">
+                <div id="top-header">
+                    <span id="scramble">F D R2 D L2 D2' F' R U' R' U M</span>
+                </div>
+                <div id="extra-info">
+                    <span id="ao5-tf">ao5: </span> <br>
+                    <span id="ao12-tf">ao12: </span>
+
+                    <button id="abort-button" class="UserButton" onclick="abortTimer()" onkeydown="if (event.keyCode == 32)
+                        return false">break-off / reset</button>
+
+                    <button id="NewScramble-button" class="UserButton" onkeydown="if (event.keyCode == 32)
+                        return false">new scramble</button>
+                </div>
+            </div>
+
+            <div id="time-area">
+
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+<script src="/js/script.js"></script>
+
+</html>
