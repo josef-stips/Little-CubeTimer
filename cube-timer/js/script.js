@@ -216,8 +216,6 @@ function OverTake() {
 
     OverTakeIsOn = true;
     allOkay = true;
-
-    console.log("hallllllllllllllllllllllllllllllllllllllllllllllllllllo")
 }
 
 function addSolve() {
